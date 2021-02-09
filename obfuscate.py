@@ -17,7 +17,7 @@ if __name__ == '__main__':
     start = random.choices(20)
     message = input("Type your message here: ")
     print(obfuscate(message, start))
-    print("The start padding for this message is" + (start))
+    print("The start padding for this message is" + str(start))
   elif option == 'D':
     start = input("What start padding is included with this message?: ")
     coded_message = input("paste your obfuscated message here: ")
