@@ -3,7 +3,6 @@ import random
 def obfuscate(message, start=13, interval=4):
 #your code goes here
   return coded_message
-
   
 #This function should take the interleaved message, start, and interval, and return the decodded message
 def deobfuscate(coded_message, start=13, interval=4):
