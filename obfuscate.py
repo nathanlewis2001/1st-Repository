@@ -1,5 +1,10 @@
 import random
+#This function should take a message and interleave it with random letters starting at string index start
+def obfuscate(message, start=13, interval=4):
+#your code goes here
+  return coded_message
 
+  
 #This function should take the interleaved message, start, and interval, and return the decodded message
 def deobfuscate(coded_message, start=13, interval=4):
 #your code goes here
