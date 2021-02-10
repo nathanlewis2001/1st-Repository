@@ -36,8 +36,7 @@ if __name__ == "__main__":
         inter = int(input("How far apart would you like your characters in the coded message\n")
         message = input("Type your message here\n")
         print(f"The start pdding for this message is {start} and your interval is {inter}")
-        
-    print(obfuscate(message, start))
+        print(obfuscate(coded_message, start))
     print("The start padding for this message is" + str(start))
     elif option == 'D':
     coded_message = input("paste your obfuscated message here\n")
