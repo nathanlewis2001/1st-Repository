@@ -2,9 +2,7 @@ import random
 from string import printable
 def obfuscate(message, start=13, interval=4):
   message_array = list(message)
-
   beginning = ''.join(random.choices([chr(random.randint(33, 126)), chr(random.randint(33, 126)), chr(random.randint(33, 126))], k=interval))
-
   new_letter = ""
   for letter in message_array:
     new_letter += letter
@@ -14,11 +12,9 @@ def obfuscate(message, start=13, interval=4):
         x += 1
   return beginning + new_letter
 def deobfuscate(coded_message, start=13, interval=4):
-
   interval+=1 
   decoded_message = coded_message[start::interval]
   return decoded_message
-
 if __name__ == "__main__":
     option = input("(D)ecode or (E)ncode or (Q)uit?\n").upper()
     while option != 'Q':
