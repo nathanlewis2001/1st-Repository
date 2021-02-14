@@ -1,8 +1,6 @@
 import random
 from string import printable
-  #This function should take a message and interleave it with random letters starting at string index start
 def obfuscate(message, start=13, interval=4):
-#your code goes here
   message_array = list(message)
 
   beginning = ''.join(random.choices([chr(random.randint(33, 126)), chr(random.randint(33, 126)), chr(random.randint(33, 126))], k=interval))
@@ -15,7 +13,6 @@ def obfuscate(message, start=13, interval=4):
         new_letter += chr(random.choice([random.randint(33, 126)]))
         x += 1
   return beginning + new_letter
-#This function should take the interleaved message, start, and interval, and return the decoded message
 def deobfuscate(coded_message, start=13, interval=4):
 
   interval+=1 
