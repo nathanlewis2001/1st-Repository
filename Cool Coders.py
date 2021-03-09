@@ -1,1 +1,0 @@
-This is the new repo for the Cool Coders
