@@ -1,0 +1,10 @@
+def myFunc(n):
+   """Function to print myFunc number
+   for the input decimal using recursion"""
+   if n > 1:
+       myFunc(n//2)
+   print(n % 2,end = '')
+ 
+# Take decimal number from user
+MyInput = int(input("Enter an integer: "))
+myFunc(MyInput)
