@@ -10,5 +10,5 @@ def permute(xs, low=0):
                 yield p        
             xs[low], xs[i] = xs[i], xs[low]
 
-for p in permute([1, 2, 3, 4]):
+for p in permute([1, 2, 3, 4, 5]):
     print (p)
